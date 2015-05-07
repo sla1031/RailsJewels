@@ -1,0 +1,56 @@
+body {
+	background-color: #000000;
+
+}
+
+#wrapper {
+	width: 960px;
+	margin: 20px auto;
+	background-color: #ffffff;
+	padding: 20px;
+}
+
+/*Home*/
+#static ul#collections li{
+	display: inline-block;
+	border: 3px ridge;
+	margin: 10px;
+	padding: 10px;
+	vertical-align: top;
+}
+
+#static ul#collections li img {
+	max-width: 150px;
+}
+
+
+/*Collections*/
+#collections ul#jewels li {
+	display: inline-block;
+	border: 3px ridge;
+	margin: 10px;
+	padding: 10px;
+	vertical-align: top;
+}
+
+#collections ul#jewels li img {
+	max-width: 150px;
+}
+
+
+#collections .image img, #jewels .image img{
+	max-width: 300px;
+}
+
+/*Jewels*/
+#jewels ul#list li {
+	display: inline-block;
+	border: 3px ridge;
+	margin: 10px;
+	padding: 10px;
+	vertical-align: top;
+}
+
+#jewels ul#list li img {
+	max-width: 150px;
+}

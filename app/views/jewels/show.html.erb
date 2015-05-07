@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h3>
+  <%= @jewel.name %>
+</h3>
+<p class="image">
+  <%=image_tag(@jewel.picture, :alt=> @jewel.name) %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @jewel.description %>
+</p>
+
+<p>
+  <strong>Collection:</strong>
+  <%=link_to @jewel.Collection.name, @jewel.Collection %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @jewel.price %>
+</p>
+
+<p>
+  <strong>Stock:</strong>
+  <% if @jewel.stock > 0 %>
+		Available
+	<% else %>
+		Out of Stock
+	<% end %>
+</p>
+
+<p><a>
+	<h3><a href="/jewels/<%= @jewel.id %>/buy">Buy</a></h3>
+	<h3><a href="/jewels/<%= @jewel.id %>/sell">Sell</a></h3>
+
+<%= link_to 'Edit', edit_jewel_path(@jewel) %> |
+<%= link_to 'List of Jewels', jewels_path %>

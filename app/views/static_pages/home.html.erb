@@ -1,0 +1,13 @@
+
+<p>In our ten years in business, Gotham Jewelry has become an icon, the ultimate destination in Gotham for gifts and jewelry. Both our store and website are filled with a carefully curated selection from Gotham’s most exciting designers, including our in-house line of jewelry.
+</p>
+<%= @store.phone %> <br />
+<%= @store.address1 %> <br />
+<% if not @store.address2.blank?%>
+ <%= @store.address2 %> <br />
+<% end %>
+<%= @store.city %>, <%= @store.state %> <%= @store.zip %> 
+<h3>Browse Our Collections</h3>
+<ul id="collections">
+<%=render @store.collections%>
+</ul>

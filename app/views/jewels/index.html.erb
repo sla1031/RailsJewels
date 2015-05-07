@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Jewels</h1>
+
+	<ul id="list">
+    <% @jewels.each do |jewel| %>
+      <li>
+        <%= jewel.name %><br />
+        $<%= jewel.price %><br/>
+        <%=image_tag(jewel.picture, :alt=>jewel.name) %><br/>
+		<%= link_to 'Show', jewel %>
+      </li>
+    <% end %>
+  </ul>
+
+<br>
+
+<%= link_to 'New Jewel', new_jewel_path %>

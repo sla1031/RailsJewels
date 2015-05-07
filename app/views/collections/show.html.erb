@@ -1,0 +1,19 @@
+
+<p id="notice"><%= notice %></p>
+
+<h3>
+  Collection:
+  <%= @collection.name %>
+</h3>
+
+<p class="image">
+	<%=image_tag(@collection.image, :alt=>@collection.name)%>
+	<br /><br />
+  <strong>Jewels</strong><br />
+  <ul id="jewels">
+	<%= render @collection.jewels %>
+  </ul>
+</p>
+
+<%= link_to 'Edit', edit_collection_path(@collection) %> |
+<%= link_to 'List of Collections', collections_path %>
